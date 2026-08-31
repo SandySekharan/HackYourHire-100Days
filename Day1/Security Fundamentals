@@ -1,1 +1,126 @@
+Today's Target
+By the end of today, you should be able to confidently explain Confidentiality, Integrity, Availability, Authentication, Authorization, and Non-repudiation—and explain why they matter in a real product.
+
+**What is Cybersecurity?**
+Cybersecurity is protecting systems, data, devices and services from unauthorized access, misuse, modification, disruption or destruction.
+An internet-connected HVAC controller may contain:
+•	Configuration
+•	Temperature data
+•	Credentials
+•	Network information
+•	Firmware
+•	Cloud credentials
+An attacker could potentially:
+•	Read configuration
+•	Change temperature
+•	Disable the controller
+•	Install malicious firmware
+•	Use the device to attack another system
+5–15 min — CIA Triad
+CIA means Confidentiality, Integrity and Availability. A useful mental model is: Who can see it? → Who can change it? → Can I use it when I need it?
+1. Confidentiality
+Only authorized people/systems should be able to access information.
+HVAC example: An attacker intercepts communication and reads device ID, credentials or configuration. This is a confidentiality breach.
+Common controls:
+•	Encryption (TLS/AES)
+•	Access control
+•	Authentication
+•	Network segmentation
+•	Data classification
+Interview answer: Confidentiality means preventing unauthorized disclosure or access to information. Encryption and access controls are common mechanisms used to protect confidentiality.
+2. Integrity
+Data or software should not be modified by an unauthorized party.
+HVAC example: An attacker changes a temperature command from 24°C to 35°C.
+Firmware example: An attacker replaces legitimate firmware with malicious firmware. If the device installs it without verifying the signature, integrity has failed.
+Common controls:
+•	Hashing/checksums
+•	Digital signatures
+•	Secure Boot
+•	Firmware signing
+•	Access control and audit logs
+Interview answer: Integrity ensures that data or software has not been modified in an unauthorized or unintended manner. Digital signatures, hashes, access controls and secure boot can help maintain integrity.
+3. Availability
+Authorized users should be able to access a service when required.
+Examples: DoS/DDoS, ransomware, server failure, network failure, resource exhaustion and power failure.
+Common controls:
+•	Redundancy
+•	Failover
+•	Backups
+•	DDoS protection
+•	Load balancing
+•	Rate limiting
+•	Disaster recovery
+Easy CIA Example — ATM
+Confidentiality: Only you should see your PIN, account balance and transaction information.
+Integrity: Your ₹50,000 balance should not become ₹5,000 because someone modified the database.
+Availability: The ATM should work when you need to withdraw money.
+15–20 min — Authentication vs Authorization
+Authentication = Who are you?
+•	Username + password
+•	MFA/OTP
+•	Certificate
+•	Biometric
+•	Access token
+Authorization = What are you allowed to do?
+Example: An Engineer may view devices, view logs and change configuration, but not delete a customer or modify firmware.
+Easy memory trick: Authentication = Identity. Authorization = Permission.
+Non-repudiation
+Non-repudiation means a party should not be able to credibly deny performing an action when reliable evidence ties the action to them.
+•	Digital signatures
+•	Certificates
+•	Secure audit logs
+•	Strong identity
+Important: A username in a log by itself does not automatically provide strong non-repudiation.
+20–23 min — Non-repudiation in Practice
+A user digitally signs an important transaction. The signature can provide evidence that the transaction came from that user and was not altered.
+23–28 min — Product Security Scenario
+Architecture: Mobile App → Cloud API → IoT Device → Physical HVAC System
+Attack #1: Attacker intercepts communication and reads device information. → Breaches Confidentiality.
+Attack #2: Attacker changes a temperature command from 24°C to 40°C. → Breaches Integrity.
+Attack #3: Attacker floods the cloud API and devices cannot connect. → Breaches Availability.
+28–33 min — Practical Exercise
+Take this system: Mobile App → Cloud API → IoT Device → Physical HVAC System. Identify at least two threats for each CIA property.
+Property	Threat 1	Threat 2	Possible Control
+Confidentiality			
+Integrity			
+Availability			
+33–40 min — Interview Questions
+1.	What is the CIA Triad?
+2.	Explain confidentiality with a real-world example.
+3.	What is the difference between confidentiality and integrity?
+4.	How would you protect confidentiality in an IoT product?
+5.	How would you protect firmware integrity?
+6.	What are some common threats to availability?
+7.	What is authentication?
+8.	What is authorization?
+9.	Authentication vs authorization — explain with an example.
+10.	You’re designing an internet-connected HVAC device. Which CIA property would you prioritize?
+For the final scenario, explain that priority depends on product safety, business and operational requirements; use threat modeling and risk assessment rather than choosing a property in isolation.
+Day 1 Self-Test
+11.	CIA stands for?
+12.	An attacker reads confidential data. Which property?
+13.	An attacker changes firmware. Which property?
+14.	An attacker makes a service unavailable. Which property?
+15.	Authentication answers what question?
+16.	Authorization answers what question?
+17.	Name 3 controls that protect confidentiality.
+18.	Name 3 controls that protect integrity.
+19.	Name 3 controls that protect availability.
+20.	Give one example where integrity is more important than confidentiality.
+Key Takeaways
+•	Confidentiality — Who can SEE the data?
+•	Integrity — Who can CHANGE the data?
+•	Availability — Can I USE the system when required?
+•	Authentication — WHO are you?
+•	Authorization — WHAT are you allowed to do?
+•	Non-repudiation — Can reliable evidence prevent denial of an action?
+Security isn't just about preventing unauthorized access; we need to protect confidentiality, maintain integrity, ensure availability, establish strong identity, and enforce appropriate authorization.
+Homework — 5 Extra Minutes
+Pick a product you know well, preferably an IoT/HVAC product, and identify:
+•	2 confidentiality threats
+•	2 integrity threats
+•	2 availability threats
+Don't worry about getting them perfect. The objective is to develop the security-engineering mindset.
+Day 2 Preview
+Security Controls: Preventive, Detective, Corrective and Compensating Controls.
 
