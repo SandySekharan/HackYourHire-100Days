@@ -35,31 +35,19 @@ Don't study for 2–3 hours occasionally. **30 minutes × 100 days = 50+ hours**
 ### 🟢 PHASE 1 — Cybersecurity Fundamentals (Days 1–10)
 
 Don't go too deep. You need to be able to **explain the concepts clearly**.
-
-Day 1 — CIA Triad
-
-Day 2 — Security Controls
-
-Day 3 — Risk
-
-Day 4 — Vulnerabilities
-
-Day 5 — Authentication
-
-Day 6 — Cryptography
-
-Day 7 — IAM
-
-Day 8 — Logging & Monitoring
-
-Day 9 — Incident Response
-
-Day 10 — Revision + Mini Interview
+* Day 1 — CIA Triad
+* Day 2 — Security Controls
+* Day 3 — Risk
+* Day 4 — Vulnerabilities
+* Day 5 — Authentication
+* Day 6 — Cryptography
+* Day 7 — IAM
+* Day 8 — Logging & Monitoring
+* Day 9 — Incident Response
+* Day 10 — Revision + Mini Interview
 
 
-# 🔵 PHASE 2 — Network & Application Security
-
-## Days 11–20
+### 🔵 PHASE 2 — Network & Application Security (Days 11–20 _
 
 This phase will be easier for you because you already have exposure to networking/security tools.
 
