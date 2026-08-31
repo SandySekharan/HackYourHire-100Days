@@ -32,140 +32,30 @@ Don't study for 2–3 hours occasionally. **30 minutes × 100 days = 50+ hours**
 
 ---
 
-# 🟢 PHASE 1 — Cybersecurity Fundamentals
-
-## Days 1–10
+### 🟢 PHASE 1 — Cybersecurity Fundamentals (Days 1–10)
 
 Don't go too deep. You need to be able to **explain the concepts clearly**.
 
-### Day 1 — CIA Triad
-### Day 2 — Security Controls
-### Day 3 — Risk
+Day 1 — CIA Triad
 
-Understand:
+Day 2 — Security Controls
 
-**Asset → Threat → Vulnerability → Risk → Control**
+Day 3 — Risk
 
-Learn:
+Day 4 — Vulnerabilities
 
-* Likelihood
-* Impact
-* Risk assessment
-* Risk treatment
+Day 5 — Authentication
 
-Interview:
+Day 6 — Cryptography
 
-> What is the difference between vulnerability and risk?
+Day 7 — IAM
 
----
+Day 8 — Logging & Monitoring
 
-### Day 4 — Vulnerabilities
+Day 9 — Incident Response
 
-Learn:
+Day 10 — Revision + Mini Interview
 
-* CVE
-* CWE
-* CVSS
-* Exploit
-* Zero-day
-* Vulnerability vs exposure
-
-Understand what CVSS actually means rather than memorizing scores.
-
----
-
-### Day 5 — Authentication
-
-Learn:
-
-* Password authentication
-* MFA
-* Certificates
-* Tokens
-* Session
-* OAuth
-* OpenID Connect
-* SAML — basic understanding
-
-Interview:
-
-> Authentication vs authorization?
-
----
-
-### Day 6 — Cryptography
-
-Learn only the fundamentals:
-
-* Encryption
-* Hashing
-* Encoding
-* Symmetric encryption
-* Asymmetric encryption
-* Digital signatures
-* Certificates
-* TLS
-
-Be able to explain:
-
-> What happens when you open HTTPS website?
-
----
-
-### Day 7 — IAM
-
-Learn:
-
-* Least privilege
-* RBAC
-* ABAC
-* Service accounts
-* Privileged accounts
-* Secrets
-
----
-
-### Day 8 — Logging & Monitoring
-
-Understand:
-
-* Logs
-* SIEM
-* SOC
-* Alert
-* Incident
-* IOC
-* Detection
-
----
-
-### Day 9 — Incident Response
-
-Learn:
-
-**Preparation → Identification → Containment → Eradication → Recovery → Lessons Learned**
-
-Interview:
-
-> A server is compromised. What will you do?
-
----
-
-### Day 10 — Revision + Mini Interview
-
-Without looking at notes, explain:
-
-1. CIA
-2. Risk
-3. CVE/CWE/CVSS
-4. Authentication
-5. Encryption
-6. IAM
-7. Incident response
-
-**Goal:** explain each in **1–2 minutes**.
-
----
 
 # 🔵 PHASE 2 — Network & Application Security
 
