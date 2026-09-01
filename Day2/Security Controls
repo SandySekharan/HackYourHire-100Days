@@ -1,1 +1,98 @@
+DAY 2 — SECURITY CONTROLS
+Preventive, Detective, Corrective & Compensating Controls | 30–40 Minute Lesson
 
+Today's Goal
+Understand the four major control types, know when each is used, and be able to classify real-world security controls during an interview.
+•	0–15 min: Learn concepts
+•	15–25 min: Examples & scenario
+•	25–35 min: Practical exercise
+•	35–40 min: Interview questions
+
+What Are Security Controls?
+Security controls are safeguards or countermeasures designed to reduce risk by preventing, detecting, responding to, or compensating for security threats.
+•	Preventive = Stop it
+•	Detective = Find it
+•	Corrective = Fix it
+•	Compensating = Alternative control when the primary control cannot be implemented
+
+1. Preventive Controls
+Preventive controls aim to stop a threat or vulnerability from being exploited before an incident occurs.
+•	Access control (IAM and roles)
+•	Firewalls and security groups
+•	MFA
+•	Input validation
+•	Secure configuration
+•	Network segmentation
+•	Least privilege
+Interview answer: Preventive controls are designed to stop unauthorized actions or reduce the attack surface before an incident happens.
+
+2. Detective Controls
+Detective controls detect or identify a security event, anomaly, or attempted attack.
+•	Logging and monitoring
+•	SIEM (for example, Splunk/Sentinel)
+•	IDS/IPS
+•	File Integrity Monitoring (FIM)
+•	User behavior analytics
+•	Security alerts
+Interview answer: Detective controls help identify suspicious activity or incidents early so that the organization can respond quickly.
+
+3. Corrective Controls
+Corrective controls respond to and fix an issue after it has occurred, contain damage, and restore normal operation.
+•	Patch management
+•	Incident response
+•	Malware removal
+•	Restore from backup
+•	Account lockout/reset
+•	Credential revocation
+Interview answer: Corrective controls reduce the impact of an incident and help restore the system to a secure operating state.
+
+4. Compensating Controls
+Compensating controls provide an alternative way to reduce risk when the primary control cannot be implemented.
+•	Manual review/approval
+•	Additional monitoring
+•	Stronger controls in another area
+•	Extra logging
+•	Policy and process controls
+•	Network restrictions
+Important: A compensating control is an alternative measure used because the preferred control is not feasible or cannot yet be implemented.
+
+Examples of Controls in Action
+Risk / Threat	Preventive	Detective	Corrective	Compensating
+Unauthorized cloud access	MFA, least privilege, IAM roles	CloudTrail, GuardDuty	Revoke keys, reset password, lock account	Manual access review, extra monitoring
+Malware on endpoint	Anti-malware, allowlisting	Endpoint logs, SIEM alerts	Remove malware, patch, restore files	Network segmentation, restricted access
+Network data leakage	TLS, DLP, access control	Network monitoring, DLP alerts	Block connection, rotate keys, notify users	Mask data, stronger logging
+Unpatched vulnerability	Patch policy, vulnerability scanning	Scanner alerts, dashboard	Apply patch, verify fix	WAF rules, temporary restrictions
+
+Product Security Scenario — HVAC System
+Architecture: Mobile App → Cloud API → IoT HVAC Device → Physical HVAC System
+Preventive: Certificate/mTLS authentication, firewall rules, role-based access.
+Detective: Connection logging, API anomaly monitoring, alerts for unusual device behavior.
+Corrective: Isolate a compromised device, push a patch, revoke its certificate, restore known-good configuration.
+Compensating: If firmware signing cannot yet be implemented, use strong network segmentation, extra monitoring, and manual firmware approval.
+
+Interview Questions — Answer Aloud
+----------------------------------
+1.	What are security controls?
+2.	What is the difference between preventive and detective controls?
+3.	Give examples of preventive controls.
+4.	Give examples of detective controls.
+5.	Give examples of corrective controls.
+6.	What are compensating controls and when do we use them?
+7.	Give one example of each control type in an IoT product.
+8.	Are logs a preventive or detective control?
+9.	Is patch management preventive, detective, or corrective?
+10.	Can a single control be part of multiple categories? Explain.
+Quick Self-Test — Answer Without Looking Back
+11.	Name the four types of security controls.
+12.	Which control type stops a threat before it happens?
+13.	Which control type helps you find an issue?
+14.	Which control type helps you fix an issue?
+15.	When do we use compensating controls?
+16.	Give one example of each control type.
+
+
+Key Takeaways
+•	Preventive controls stop or reduce the chance of an attack.
+•	Detective controls identify attacks, anomalies, or incidents.
+•	Corrective controls contain, fix, and recover from incidents.
+•	Compensating controls provide an alternative risk-reduction measure when the primary control is not feasible.
