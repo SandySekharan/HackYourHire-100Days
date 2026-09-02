@@ -1,0 +1,65 @@
+1. What is the CIA Triad?
+It is a foundational cybersecurity framework that guides how organizations protect sensitive data through Confidentiality, Integrity, and Availability.
+
+2. Explain confidentiality with a real-world example.
+Confidentiality means keeping information hidden from unauthorized users; for example, an online banking app uses encryption so that only you and the bank can see your account balance.
+
+3. What is the difference between confidentiality and integrity?
+Confidentiality ensures unauthorized users cannot read the data, whereas integrity ensures unauthorized users cannot alter or tamper with the data.
+
+4. How would you protect confidentiality in an IoT product?
+I would encrypt data in transit using TLS, encrypt data at rest on the local flash storage, and disable exposed physical debugging interfaces like JTAG and UART.
+
+5. How would you protect firmware integrity?
+I would implement secure boot with hardware-backed cryptographic verification, ensuring the device only loads digitally signed firmware images.
+
+6. What are some common threats to availability?
+Common threats include Distributed Denial of Service (DDoS) attacks, ransomware that locks systems, hardware component failures, and unexpected network outages.
+
+7. What is authentication?
+Authentication is the process of verifying that an entity or user really is who they claim to be.
+
+8. What is authorization?
+Authorization is the process of determining what specific resources or actions an authenticated user is permitted to access.
+
+9. Authentication vs authorization — explain with an example.
+Boarding a flight illustrates both: showing your passport proves your identity (authentication), while your boarding pass dictates whether you can sit in first class or economy (authorization).
+
+10. You’re designing an internet-connected HVAC device. Which CIA property would you prioritize?
+I would prioritize Integrity, because an attacker altering temperature limits or compressor commands can cause physical equipment damage or life-safety hazards.
+
+11. CIA stands for?
+Confidentiality, Integrity, and Availability.
+
+12. An attacker reads confidential data. Which property?
+Confidentiality.
+
+13. An attacker changes firmware. Which property?
+Integrity.
+
+14. An attacker makes a service unavailable. Which property?
+Availability.
+
+15. Authentication answers what question?
+"Who are you?"
+
+16. Authorization answers what question?
+"What are you allowed to do?"
+
+17. Name 3 controls that protect confidentiality.
+    Strong data encryption (AES-256)
+    Access control lists (ACLs)
+    Multi-factor authentication (MFA)
+
+18. Name 3 controls that protect integrity.
+    Cryptographic hashes and digital signatures
+    File integrity monitoring (FIM)
+    Role-based write permissions
+
+19. Name 3 controls that protect availability.
+    Redundant power supplies and server clustering
+    DDoS mitigation services
+    Automated data backups and disaster recovery failovers
+
+20. Give one example where integrity is more important than confidentiality.
+Public stock market ticker prices or weather alert warnings: the information is public knowledge, but if someone tampers with the numbers, people make catastrophic financial or safety decisions.
