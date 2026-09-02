@@ -1,0 +1,53 @@
+1. What are security controls?
+Security controls are safeguards and countermeasures designed to reduce risk, prevent unauthorized access, and protect the confidentiality, integrity, and availability of systems and data.
+
+2. What is the difference between preventive and detective controls?
+Preventive controls stop an attack or security incident before it happens, whereas detective controls discover and alert you to an incident that is already occurring or has taken place.
+
+3. Give examples of preventive controls.
+Firewalls, multi-factor authentication (MFA), role-based access control (RBAC), and full-disk encryption.
+
+4. Give examples of detective controls.
+Intrusion Detection Systems (IDS), audit logs, security information and event management (SIEM) tools, and automated vulnerability scanners.
+
+5. Give examples of corrective controls.
+Restoring systems from off-site backups, deploying software patches after an incident, terminating compromised sessions, and running automated quarantine scripts on infected endpoints.
+
+6. What are compensating controls and when do we use them?
+Compensating controls are alternative security measures put in place when an ideal primary control is too costly, technically impossible, or impractical to implement.
+
+7. Give one example of each control type in an IoT product.
+    Preventive: Hardware-backed secure boot preventing unsigned firmware execution.
+    Detective: An on-device anomaly agent monitoring unexpected spikes in outbound traffic.
+    Corrective: An automated over-the-air (OTA) rollback to the last known good firmware if a crash loop occurs.
+    Compensating: Placing a legacy IoT sensor with unpatchable firmware on an isolated VLAN with strict firewall rules instead of rewriting its codebase.
+
+8. Are logs a preventive or detective control?
+Logs are primarily a detective control because they record activities and trace security events that have already occurred.
+
+9. Is patch management preventive, detective, or corrective?
+Patch management is primarily preventive when applied proactively to close vulnerabilities before exploitation, but it acts as a corrective control when applied as part of an incident response process to remediate an active breach.
+
+10. Can a single control be part of multiple categories? Explain.
+Yes, because the classification depends on the operational context; for instance, an Intrusion Prevention System (IPS) acts as a detective control by analyzing traffic signatures and as a preventive control by dropping malicious packets in real time.
+
+11. Name the four types of security controls.
+Preventive, Detective, Corrective, and Compensating controls.
+
+12. Which control type stops a threat before it happens?
+Preventive control.
+
+13. Which control type helps you find an issue?
+Detective control.
+
+14. Which control type helps you fix an issue?
+Corrective control.
+
+15. When do we use compensating controls?
+We use them when standard or primary controls cannot be directly implemented due to legacy hardware constraints, budget limits, or architectural incompatibilities.
+
+16. Give one example of each control type.
+    Preventive: A biometric door lock.
+    Detective: A smoke detector or CCTV camera.
+    Corrective: A fire extinguisher.
+    Compensating: A 24/7 security guard stationed at a broken biometric door.
