@@ -1,0 +1,172 @@
+DAY 3 — RISK FUNDAMENTALS
+Cybersecurity Interview Lesson
+
+1. Today's Goal
+Understand the relationship between Asset → Threat → Vulnerability → Risk → Impact/Likelihood → Risk Treatment, and confidently explain vulnerability vs. risk in an interview.
+
+2. Risk Mental Model
+ASSET → THREAT + VULNERABILITY → RISK → IMPACT × LIKELIHOOD → TREATMENT
+Concept	Simple meaning	Example
+Asset	Something valuable that must be protected.	HVAC controller, customer data, firmware, cloud API
+Threat	Something capable of causing harm.	Attacker, malware, insider, natural event
+Vulnerability	A weakness that can be exploited.	Default password, unpatched service, insecure API
+Risk	Potential loss/harm when a threat can exploit a vulnerability affecting an asset.	Attacker uses default password to control HVAC
+Impact	How bad the result would be.	Outage, safety issue, financial/reputation loss
+Likelihood	How probable the event is.	Low / Medium / High
+Risk Treatment	What you decide to do about the risk.	Mitigate, avoid, transfer, accept
+
+3. Core Concepts
+3.1 Asset
+An asset is anything valuable that needs protection.
+•	Data: customer information, credentials, configuration.
+•	Software: firmware, mobile application, cloud services.
+•	Hardware: controller, gateway, sensor, server.
+•	Business capability: HVAC availability, remote monitoring, building automation.
+
+3.2 Threat
+A threat is a potential cause or source of harm to an asset.
+•	External attacker
+•	Malware or ransomware
+•	Malicious or compromised insider
+•	Accidental human action
+•	Environmental events such as power failure or fire
+
+3.3 Vulnerability
+A vulnerability is a weakness that can be exploited or triggered to cause an unwanted outcome.
+•	Default or weak credentials
+•	Unpatched software
+•	Insecure network protocol
+•	Missing authentication/authorization
+•	Poor input validation
+•	Insecure firmware update mechanism
+
+3.4 Risk
+Risk is the potential for loss or harm when a threat can exploit a vulnerability and affect an asset.
+Risk ≈ Likelihood × Impact
+This is a simplified risk-scoring model useful for interviews. Real organizations may use qualitative or quantitative methods with additional factors.
+
+3.5 Impact
+Impact describes the consequence if the risk materializes.
+•	Safety impact
+•	Operational impact
+•	Financial impact
+•	Privacy impact
+•	Reputation/regulatory impact
+•	Loss of availability or business continuity
+
+3.6 Likelihood
+Likelihood describes how probable the unwanted event is.
+•	Low — difficult or uncommon to exploit
+•	Medium — plausible under realistic conditions
+•	High — easy, exposed, or frequently occurring
+
+
+4. Most Important Interview Concept: Vulnerability ≠ Risk
+Vulnerability	Risk	Example
+A weakness	Potential consequence from that weakness	Default password vs. attacker controlling HVAC
+Exists in a system/component	Depends on threat, likelihood and impact	Unpatched service vs. likely exploitation causing outage
+Can often be remediated technically	Must be evaluated and treated	Fix patch vs. prioritize based on business impact
+Interview-ready answer: “A vulnerability is a weakness. Risk is the potential impact or loss associated with a threat exploiting that weakness, considering factors such as likelihood and impact.”
+
+
+5. Product Security Example — HVAC IoT System
+Scenario: Mobile App → Cloud API → IoT HVAC Controller → Physical HVAC System
+Step	HVAC Example
+Asset	HVAC controller, firmware, customer configuration, cloud API
+Threat	Remote attacker
+Vulnerability	Default password or an unpatched exposed service
+Attack	Attacker exploits the weakness and gains unauthorized control
+Risk	Unauthorized HVAC control may cause operational disruption or safety/business impact
+Impact	Downtime, equipment issues, occupant discomfort, financial or safety consequences
+Likelihood	Higher if the device is internet-exposed and the weakness is easy to exploit
+
+
+6. Risk Treatment
+After identifying a risk, an organization generally chooses how to handle it.
+Treatment	Meaning	Example
+Mitigate / Reduce	Implement controls to reduce likelihood or impact.	Patch service, remove default credentials, add MFA, segment device.
+Avoid	Stop the risky activity or remove the exposure.	Disable an unnecessary internet-facing service.
+Transfer	Shift or share some financial/operational consequences.	Insurance or contractual risk transfer.
+Accept	Consciously accept remaining risk within risk tolerance.	Accept a low-risk issue with documented approval and monitoring.
+
+7. 30–40 Minute Study Plan
+Time	Activity
+0–5 min	Learn the Asset → Threat → Vulnerability → Risk chain.
+5–15 min	Understand Asset, Threat, Vulnerability, Risk, Impact and Likelihood.
+15–20 min	Memorize the difference between Vulnerability and Risk.
+20–27 min	Work through the HVAC IoT example.
+27–32 min	Learn the four risk-treatment options.
+32–40 min	Answer interview questions and self-test without looking at answers.
+
+
+8. Practical Exercise — 5 to 10 Minutes
+Choose one real product or system you work with and fill in:
+•	Asset: ________________________________
+•	Threat: ________________________________
+•	Vulnerability: ________________________________
+•	Risk: ________________________________
+•	Impact: ________________________________
+•	Likelihood: ________________________________
+•	Risk treatment: ________________________________
+Challenge: identify two different vulnerabilities that could create different levels of risk for the same asset.
+
+
+9. Interview Questions
+1.	What is risk in cybersecurity?
+2.	What is the difference between a threat and a vulnerability?
+3.	What is the difference between a vulnerability and a risk?
+4.	Give an example of an asset, threat, vulnerability and risk in an IoT product.
+5.	How do you determine the severity of a risk?
+6.	What is the relationship between likelihood and impact?
+7.	What are the four common risk-treatment options?
+8.	When would you accept a security risk?
+9.	Give an example where the same vulnerability creates different levels of risk.
+10.	How would you prioritize vulnerabilities in a product-security program?
+
+
+10. Short Interview Answers
+What is risk? Risk is the potential for harm or loss when a threat exploits a vulnerability affecting an asset, considering likelihood and impact.
+Threat vs. vulnerability ? A threat is a potential source of harm; a vulnerability is a weakness that can be exploited or triggered by a threat.
+Vulnerability vs. risk ? A vulnerability is the weakness itself. Risk considers what could happen because of that weakness, how likely it is, and how serious the consequence would be.
+How do you prioritize? Consider exploitability/likelihood, business and safety impact, exposure, affected assets, existing controls, and organizational risk tolerance.
+
+
+11. Self-Test — Don't Look at the Answers
+11.	What is an asset?
+12.	What is a threat?
+13.	What is a vulnerability?
+14.	What is risk?
+15.	What are impact and likelihood?
+16.	Complete: Risk ≈ __________ × __________.
+17.	Name the four risk-treatment options.
+18.	Is an unpatched server itself a risk or a vulnerability?
+19.	Give one HVAC IoT risk.
+20.	Explain vulnerability vs. risk in one sentence.
+
+
+12. Self-Test Answers
+•	Asset = something valuable that needs protection.
+•	Threat = a potential cause/source of harm.
+•	Vulnerability = a weakness that can be exploited or triggered.
+•	Risk = potential loss/harm arising from a threat exploiting a vulnerability, considering likelihood and impact.
+•	Impact = consequence/severity; Likelihood = probability of occurrence.
+•	Likelihood × Impact.
+•	Mitigate/Reduce, Avoid, Transfer, Accept.
+•	Vulnerability.
+•	Example: an attacker exploits a default password to gain control of an HVAC controller, causing operational disruption.
+•	Example: “A vulnerability is a weakness; risk is the potential harm from that weakness considering likelihood and impact.”
+
+
+13. 5-Minute Homework
+Take one product you know and identify: 2 assets, 2 threats, 2 vulnerabilities, 2 risks, their likely impacts, and one treatment for each risk.
+
+
+14. Key Takeaways
+•	Asset = what you protect.
+•	Threat = what can cause harm.
+•	Vulnerability = weakness.
+•	Risk = potential harm/loss associated with a threat exploiting a vulnerability.
+•	Impact = how bad; Likelihood = how probable.
+•	Risk ≈ Likelihood × Impact is a useful simplified interview model.
+•	Risk treatment: Mitigate, Avoid, Transfer, Accept.
+•	Vulnerability ≠ Risk — this is a key interview distinction.
